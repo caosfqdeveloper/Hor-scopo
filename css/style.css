@@ -1,0 +1,85 @@
+/*
+Autor:caosfqdeveloper
+Fecha: Fecha de Creación
+Descripcion: Este Archivo css contiene los estilos para el sitio web X
+*/
+
+
+/*Estilos para el sitio web X*/
+
+/*reglas de estilo*/
+html, body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 16px;
+}
+
+/*Selectores de clase y etiqyetas del header*/
+.header_logo{
+    /*Propiedades del texto*/
+  font-size: 2rem;
+  text-align: left;
+  text-decoration: none; 
+
+  /*posición del contenedor*/
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 1;/*Si su valor es positivo me aseguro que este siempre por delante*/
+}
+.header_logo a i {
+    color: #f2f2f2ff;
+}
+/*seccion del main*/
+.banner{
+    /*propiedades geometricas del banner*/
+    height: 100vh;/*ajustamos la altura del banner al viewport*/
+    position: relative;
+    overflow: hidden;/*oculta la barra horizontal de desplazamiento o scrollbar horizontal*/
+  
+}
+.banner_content{
+    /*propiedades herdeables de las fuentes*/
+    text-align: center;
+    color:white;/*referencia color por palabra clave*/
+    /*posicionamiento del contenedor(propiedadews no heredable)*/
+    position: absolute;
+    top: 35vh;
+    left: 40vw;
+    z-index:2;
+}
+.banner_content h1{
+    font-size: 3rem;
+   
+}
+.banner_content h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.banner_button{
+    /*convertimos elemento de linea a bloque*/
+    display:inline-block;
+    /*atributos del bloque*/
+    background-color: rgba(255,255,255,0.3);
+    padding:10px 20px;
+    border-radius: 5px;
+    /*propiedades de la fuente del boton*/
+    color:#f2f2f2;
+    text-decoration: none;
+
+}
+.video_background{
+    /*propiedades geometricas del video*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*dimensiones*/
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+    /*controlamos el ajuste del tamaño del video
+    fill(estira), contain (no distorsiona), cover(acerca y cubre), none,
+    */
+
+}
